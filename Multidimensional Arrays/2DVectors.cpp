@@ -25,11 +25,11 @@ int main()
     v.push_back(v1);
     v.push_back(v2);
     v.push_back(v3);
-    // for(int i=0;i<v.size();i++){
-    //     for(int j=0;j<v[0].size(); j++){
-    //         cout<<v[i][j];
-    //     }
-    //     cout<<endl;
-    // }
+    for(int i=0;i<v.size();i++){
+        for(int j=0;j<v[0].size(); j++){
+            cout<<v[i][j];
+        }
+        cout<<endl;
+    }
     cout<<v[2][3];
 }

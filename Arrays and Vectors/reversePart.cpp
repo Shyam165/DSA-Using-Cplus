@@ -21,6 +21,7 @@ void reversePart(int i, int j, vector<int> &a)
         i++;
         j--;
     }
+
     return;
 }
 int main()
