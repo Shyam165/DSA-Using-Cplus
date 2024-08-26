@@ -4,7 +4,7 @@ using namespace std;
 
 void display(int a[])    //here int a[] is same as int * a here it act as a pointer
 {
-    // int size=sizeof(a)/sizeof(a[0]);    //we cannot declare here sizeof operator of find size of a so we have to pass size of a
+    // int size=sizeof(a)/sizeof(a[0]);    //we cannot declare here sizeof operator to find size of a array so we have to pass size of a
 
     for (int i = 0; i <= 4; i++)
     {

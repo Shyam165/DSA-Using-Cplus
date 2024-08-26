@@ -20,11 +20,17 @@ int main(){
     // cout<<(int)(str[6]);
       //str.length()  //str.size()
 
-      string name;
-      getline(cin, name);    //it will take space also between the input strings
-      cout<<name;
+      // string name;
+      // getline(cin, name);    //it will take space also between the input strings
+      // cout<<name;
 
+      // string str = "my name is shyam";
+      // cout<<str.size()<<endl;   //0 to str.size()-1
+      // str.push_back('t');
+      // cout<<str.length()<<str;
 
-
+    //   int x = 123443;
+    //  string str=to_string(x);
+    //  cout<<str.length()<<endl;
 
 }
