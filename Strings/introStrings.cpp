@@ -29,8 +29,8 @@ int main(){
       // str.push_back('t');
       // cout<<str.length()<<str;
 
-    //   int x = 123443;
-    //  string str=to_string(x);
-    //  cout<<str.length()<<endl;
+      int x = 123443;
+     string str=to_string(x);
+     cout<<str.length()<<endl;
 
 }
