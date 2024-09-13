@@ -110,10 +110,17 @@ void deleteNode(int position, Node* & head) {
             curr = curr -> next;
             cnt++;
         }
-
+        
+       
         prev -> next = curr -> next;
+
+        // for updating the tail
+        //  if (curr -> next = NULL){
+        //    tail = prev;
+        // }
+
         curr -> next  = NULL;
-        delete curr;
+        delete curr; 
 
     }
 }
