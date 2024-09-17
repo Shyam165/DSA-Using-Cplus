@@ -25,6 +25,10 @@ int main()
     subset(v, index, k);
 }
 
+
+
+//---------------------------------------------LEATCODE QUESTION-----------------------
+
 // class Solution {
 // public:
 //     void helper(vector<int>&nums,vector<int> ans,index,vector<vector<int>>&finalans){//better to mkae a helper function so that agruments according to us
