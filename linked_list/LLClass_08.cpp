@@ -55,6 +55,50 @@ class LinkedList{
         size++;
     }
     }
+    void deleteAtHead(){
+        if(size==0) {
+            cout<<"List is empty!";
+            return;
+        }
+        head=head->next;
+        size--;
+    }
+
+    void deletAtTail(){
+        if(size==0) {
+            cout<<"List is empty!";
+            return;
+        }
+         Node* temp =head;
+         while (temp->next != tail)
+         {
+            temp=temp->next;
+         }
+         temp->next=NULL;
+         tail = temp;
+         size--;
+    }
+    void deleteAtIdx(int idx){
+        if(size==0){
+            cout<<"List is empty!";
+            return;
+        }
+        else if(idx<0 || idx>size){
+            cout<<"Invalid Index";
+            return;
+        }
+        else if(idx==0) return deleteAtHead();
+        else if(idx==size-1) return deletAtTail();
+        else{
+            Node* temp=head;
+            for(int i=1;i<=idx-1;i++){
+                temp=temp->next;
+            }
+            temp->next = temp->next->next;
+            size--;
+        }
+    }
+    
     void display(){
         Node* temp=head;
         while(temp!=NULL){
@@ -73,9 +117,17 @@ int main(){
     l1.display();
     l1.insertAtTail(30);
     l1.display();
+     l1.insertAtTail(40);
+    l1.display();
     // cout<<l1.size;
     l1.insertAtHead(5);
       l1.display();
     l1.insertAtIdx(4, 80);
+    l1.display();
+    l1.deleteAtHead();
+    l1.display();
+    l1.deletAtTail();
+    l1.display();
+    l1.deleteAtIdx(2);
     l1.display();
 }
