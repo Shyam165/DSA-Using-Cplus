@@ -47,7 +47,11 @@ void displayrec(Node *head)
     cout << head->val << " "; // kaam
     displayrec(head->next);   // call
 }
-
+void insertAtEnd(Node* head, int val){
+    Node* temp = new Node(val);
+    while(head->next!=NULL) head=head->next;
+    head->next = temp;
+}
 int main()
 {
     
@@ -62,8 +66,10 @@ int main()
     d->next =e;
 
     //cout<<a->next->next->next->val;
-    //display(a);
-    revDisplay(a);
+    display(a);
+    insertAtEnd(a, 80);
+     display(a);
+    // revDisplay(a);
     //displayrec(a);
     //cout<<size(a);
 }
