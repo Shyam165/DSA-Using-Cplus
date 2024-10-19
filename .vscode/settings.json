@@ -2,6 +2,7 @@
     "files.associations": {
         "*.dot": "bat",
         "iostream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "map": "cpp"
     }
 }
