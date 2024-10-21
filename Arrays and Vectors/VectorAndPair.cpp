@@ -12,7 +12,11 @@ int main(){
     vector<pair<int, int>> v;
 
     for(int i=0;i<(sizeof(arr)/sizeof(arr[0]));i++){
-        v.push_back(make_pair(arr[i], i));
+        // v.push_back(make_pair(arr[i], i));
+        pair<int, int> p;
+        p.first=arr[i];
+        p.second=i;
+        v.push_back(p);
     }
 
     sort(v.begin(), v.end(), compare);
