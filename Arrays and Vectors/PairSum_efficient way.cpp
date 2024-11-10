@@ -33,3 +33,24 @@ int main(){
   cout<<ans[0]<<", "<<ans[1]<<endl;
     return 0;
 }
+
+
+
+
+    // vector<int> twoSum(vector<int>& nums, int target) {
+    //   unordered_map<int, int> numIndexMap;  // Maps number to its index
+        
+    //     for (int i = 0; i < nums.size(); ++i) {
+    //         int complement = target - nums[i];
+            
+    //         // Check if complement exists in the map
+    //         if (numIndexMap.find(complement) != numIndexMap.end()) {
+    //             return {numIndexMap[complement], i};
+    //         }
+            
+    //         // Add current number and its index to the map
+    //         numIndexMap[nums[i]] = i;
+    //     }
+        
+    //     return {};  // No solution found
+    // }
