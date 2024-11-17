@@ -12,7 +12,7 @@ int main()
         int curr = 1;
         for (int j = 0; j <= i; j++)
         {
-if (i==5) cout<<curr;
+              if (i==4) cout<<curr;
             // cout << curr << " ";
             curr = curr * (i - j) / (j + 1);   // cout<<fact(i)/fact(j)*fact(i-j);
             
